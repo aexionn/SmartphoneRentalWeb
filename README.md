@@ -47,22 +47,15 @@
 5. **Serve the Application**
    php artisan serve
 
-**📁 Folder Structure Overview**
-resources/views/
-├── devices/       # Blade views for device listing and details
-├── rentals/       # Rental form, status views
-├── admin/         # Admin dashboard & approval system
-└── layouts/       # Master layouts (Tailwind + Alpine integrated)
-
-**🔐 Authentication**
+## 🔐 Authentication
 This project uses Laravel’s built-in authentication (no Jetstream/Breeze). Guards and middleware protect routes appropriately.
 
-**📌 Notes**
-<ol>
+## 📌 Notes
+<ul>
     <li>This project is for demonstration only and not intended for production use.</li>
     <li>Midtrans is used in sandbox mode.</li>
     <li>Uploaded KTP images are stored locally in storage/app/public.</li>
-</ol>
+</ul>
 
-**📃 License**
+## 📃 License
 This project is open-sourced under the MIT License.
