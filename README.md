@@ -32,20 +32,33 @@
    ```bash
    git clone https://github.com/yourusername/SmartphoneRental.git
    cd SmartphoneRental
+   ```
    
 2. **Install Dependencies**
+
+   ```bash
    composer install
    npm install && npm run dev
+   ```
    
 3. **Configure Environment**
+
+   ```bash
    cp .env.example .env
    php artisan key:generate
+   ```
    
 4. **Run Migrations (and optionally seed data)**
+
+   ```bash
    php artisan migrate
+   ```
    
 5. **Serve the Application**
+
+   ```bash
    php artisan serve
+   ```
 
 ## 🔐 Authentication
 This project uses Laravel’s built-in authentication (no Jetstream/Breeze). Guards and middleware protect routes appropriately.
