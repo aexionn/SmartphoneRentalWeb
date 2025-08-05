@@ -66,7 +66,6 @@ This project uses Laravel’s built-in authentication (no Jetstream/Breeze). Gua
 ## 📌 Notes
 <ul>
     <li>This project is for demonstration only and not intended for production use.</li>
-    <li>Midtrans is used in sandbox mode.</li>
     <li>Uploaded KTP images are stored locally in storage/app/public.</li>
 </ul>
 
