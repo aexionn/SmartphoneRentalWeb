@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-primary: #3B82F6;
+    --color-secondary: #10B981;
+    --color-dark: #1F2937;
+    --color-light: #F3F4F6;
+    --font-sans: Inter, sans-serif;
+}
+
+@layer utilities {
+    .phone-mockup {
+        perspective: 1500px;
+    }
+    .phone-screen {
+        transform: rotateY(-15deg);
+        box-shadow: 15px 15px 30px rgba(0,0,0,0.1);
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .animate {
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+    @keyframes float {
+        0%, 100% { 
+            transform: translateY(0px) rotate(0deg); 
+        }
+        50% { 
+            transform: translateY(-20px) rotate(5deg); 
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes slideIn {
+        from { 
+            opacity: 0; 
+            transform: translateX(-20px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateX(0); 
+        }
+    }
+    .navbar.scrolled {
+        @apply shadow-md bg-white/90 backdrop-blur-sm;
+    }
+}
